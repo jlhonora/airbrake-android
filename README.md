@@ -1,37 +1,21 @@
 Airbrake Notifer for Android
 ===========================
 
-Deprecation Warning
--------------------
-I am no longer maintaining this library because I am now using 
-[Bugsnag](https://bugsnag.com) to track my Android app errors.
+This is a fork from [loopj's implementation of airbrake for Android](https://github.com/loopj/airbrake-android). Since that library is no longer mantained, I made a couple of modifications to make it work with Android.
 
 Overview
 --------
 The Airbrake notifier for Android is designed to give you instant notification
 of any uncaught exceptions thrown from your Android applications.
 
-
-Building from Source
---------------------
-To build a `.jar` file from source, make a clone of the airbrake-android
-github repository and run:
-
-```shell
-ant package
-```
-
-This will generate a file named `airbrake-android.jar`.
-
-
 Installation & Setup
 --------------------
-Copy the .jar file to your Android app's `libs/` folder.
+Copy the `AirbrakeNotifier.java` file to any of your Android app's package folder, e.g. `your.package.name`. Replace the `package` line in `AirbrakeNotifier.java` with `your.package.name`.
 
 Import the `AirbrakeNotifier` class in your app's main Activity.
 
 ```java
-import com.loopj.android.airbrake.AirbrakeNotifier;
+import your.package.name.AirbrakeNotifier;
 ```
 
 In your activity's `onCreate` function, register to begin capturing exceptions:

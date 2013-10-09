@@ -51,8 +51,8 @@ public class AirbrakeNotifier {
     private static final String LOG_TAG = "AirbrakeNotifier";
 
     // Basic settings
-    private static final String AIRBRAKE_ENDPOINT = "http://airbrakeapp.com/notifier_api/v2/notices";
-    private static final String AIRBRAKE_API_VERSION = "2.0";
+    private static final String AIRBRAKE_ENDPOINT = "http://www.airbrake.io/notifier_api/v2/notices";
+    private static final String AIRBRAKE_API_VERSION = "2.3";
 
     private static final String NOTIFIER_NAME = "Android Airbrake Notifier";
     private static final String NOTIFIER_VERSION = "1.3.0";
